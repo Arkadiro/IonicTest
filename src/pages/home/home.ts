@@ -6,9 +6,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  public navCtrl:NavController;
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(
+  navCtrl: NavController
+  ) 
+  {
+    this.navCtrl = navCtrl;
   }
 
 }
